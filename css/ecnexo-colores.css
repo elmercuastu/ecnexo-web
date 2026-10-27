@@ -1,0 +1,33 @@
+/* Ecnexo Digital — paleta de colores para la web
+   Pega esto al principio de tu hoja de estilos y usa las variables: color: var(--ecnexo-vino); */
+:root {
+  /* Marca */
+  --ecnexo-rojo: #E3263A;          /* botones, enlaces, acentos (blanco encima: 4,6:1) */
+  --ecnexo-rojo-intenso: #B91C2E;  /* hover/activo de botones (blanco encima: 6,4:1) */
+  --ecnexo-vino: #3B1B1F;          /* títulos, texto principal, secciones oscuras (15,4:1 sobre blanco) */
+  --ecnexo-vino-profundo: #2A1215; /* pie de página */
+  --ecnexo-rosa-acento: #F2A0AA;   /* enlaces y detalles sobre fondo vino (7,6:1) */
+
+  /* Neutros */
+  --ecnexo-blanco: #FFFFFF;        /* fondo principal */
+  --ecnexo-crema: #FAF6F6;         /* fondo de secciones alternas */
+  --ecnexo-rosa-suave: #FDECEE;    /* etiquetas, avisos, destacados (texto en rojo intenso) */
+  --ecnexo-gris: #6B5A5D;          /* texto secundario (6,5:1 sobre blanco) */
+  --ecnexo-borde: #EADFE0;         /* bordes, separadores */
+
+  /* Tipografía */
+  --ecnexo-fuente: "Montserrat", system-ui, sans-serif;
+}
+
+/* Reglas básicas de ejemplo */
+body { background: var(--ecnexo-blanco); color: var(--ecnexo-vino); font-family: var(--ecnexo-fuente); }
+h1, h2, h3 { color: var(--ecnexo-vino); font-weight: 800; }
+p.secundario, small { color: var(--ecnexo-gris); }
+a { color: var(--ecnexo-rojo); }
+.boton { background: var(--ecnexo-rojo); color: #FFFFFF; font-weight: 700; border-radius: 10px; padding: 14px 26px; }
+.boton:hover { background: var(--ecnexo-rojo-intenso); }
+.seccion-alterna { background: var(--ecnexo-crema); }
+.seccion-oscura { background: var(--ecnexo-vino); color: #FFFFFF; }
+.seccion-oscura a { color: var(--ecnexo-rosa-acento); }
+footer { background: var(--ecnexo-vino-profundo); color: #FFFFFF; }
+.etiqueta { background: var(--ecnexo-rosa-suave); color: var(--ecnexo-rojo-intenso); }
